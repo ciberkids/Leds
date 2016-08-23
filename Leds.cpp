@@ -44,6 +44,8 @@ void Leds::ledGreenBlink() {
   ledGreenOff();
 }
 void Leds::ledGreenLongBlink() {
+  ledGreenOff();
+  delay(blinktime_);
   ledGreenOn();
   delay(blinktime_);
   ledGreenOff();
