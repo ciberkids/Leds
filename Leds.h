@@ -18,19 +18,23 @@ class Leds {
 
  public:
   Leds(uint8_t const redLedPin, uint8_t const greenLedPin, uint8_t const whiteLedPin, uint8_t const blinktime)    ;
-  void ledRedOn();
-  void ledRedOff();
-  void ledGreenOn();
-  void ledGreenOff();
-  void ledWhiteOn();
-  void ledWhiteOff();
-  void ledAllblink();
-  void ledRedBlink();
-  void ledRedLongBlink();
-  void ledGreenBlink();
-  void ledGreenLongBlink();
-  void ledWhiteBlink();
-  void ledWhiteLongBlink();
+  void ledRedOn() const;
+  void ledRedOff() const;
+  void ledGreenOn() const;
+  void ledGreenOff() const;
+  void ledWhiteOn() const;
+  void ledWhiteOff() const;
+  void ledAllblink() const;
+  void ledAllOff() const;
+  void ledRedBlink() const;
+  void ledRedLongBlink() const;
+  void ledRedThreeLongBlink() const;
+  void ledGreenBlink() const;
+  void ledGreenLongBlink() const;
+  void ledGreenThreeLongBlink() const;
+  void ledWhiteBlink() const;
+  void ledWhiteLongBlink() const;
+  void ledWhiteThreeLongBlink() const;
 
 };
 
