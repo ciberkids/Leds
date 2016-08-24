@@ -34,12 +34,15 @@ void Leds::ledAllOff() const {
 }
 
 void Leds::ledRedBlink() const {
+  ledRedOff();
+  delay(100);
   ledRedOn();
   delay(blinktime_/3);
   ledRedOff();
 }
 void Leds::ledRedLongBlink() const {
   ledRedOff();
+  delay(100);
   ledRedOn();
   delay(blinktime_);
   ledRedOff();
@@ -49,12 +52,15 @@ void Leds::ledRedThreeLongBlink() const {
     ledRedLongBlink();
 }
 void Leds::ledGreenBlink() const {
+  ledGreenOff();
+  delay(100);
   ledGreenOn();
   delay(blinktime_/3);
   ledGreenOff();
 }
 void Leds::ledGreenLongBlink() const {
   ledGreenOff();
+  delay(100);
   ledGreenOn();
   delay(blinktime_);
   ledGreenOff();
@@ -65,12 +71,15 @@ void Leds::ledGreenThreeLongBlink() const {
 }
 
 void Leds::ledWhiteBlink() const {
+  ledWhiteOff();
+  delay(100);
   ledWhiteOn();
   delay(blinktime_/3);
   ledWhiteOff();
 }
 void Leds::ledWhiteLongBlink() const {
   ledWhiteOff();
+  delay(100);
   ledWhiteOn();
   delay(blinktime_);
   ledWhiteOff();
